@@ -23,7 +23,7 @@ body{
 }
 
 .logo{
-    background-image: url(real6.jpg);
+    background-image: url(logo2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,13 +67,20 @@ body{
     color: white;
 }
 /* search box part*/
-
- a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li{
+margin: 0 20px;
+}
 /* shop*/
 
 
@@ -106,14 +113,9 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-.all a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-}
+
 .panel-all{
-    width: 70%;
+    
     font-size: 0.80rem;
     font-weight: 700;
 }
@@ -137,28 +139,6 @@ body{
 }
 .panel-all p:hover::after{
     width:100%
-}
-
-.inner p{
-   display: inline-block;
-   font-size: 0.80rem;
-   font-weight: 700;
-   position: relative;
-   cursor: pointer;
-}
-.inner p::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #2c3e50;
-    color: #2c3e50;
-    transition: width 0.4s ease;
-}
-.inner p:hover::after{
-    width: 100%;
 }
 
 /* menu bar end*/
